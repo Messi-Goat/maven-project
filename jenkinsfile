@@ -15,7 +15,7 @@ pipeline {
 				{
 				parallel
 				{
-				stage('pckage')
+				stage('package')
 				{
 				steps
 				{
