@@ -15,7 +15,7 @@ pipeline {
 				{
 				parallel
 				{
-				stage('package')
+				stage('pckage')
 				{
 				steps
 				{
@@ -36,4 +36,5 @@ pipeline {
 			   }
 			   }
 			   }
+			   fail fast true
               
