@@ -6,7 +6,7 @@ pipelline {
 				{
 				steps
 				{
-				git branch: 'master', url: 'https://github.com/Messi-Goat/maven-project.git
+				git branch: 'master', url: "https://github.com/Messi-Goat/maven-project.git"
 				
 				}
 				}
@@ -19,7 +19,7 @@ pipelline {
 				{
 				steps
 				{
-				 withMaven(jdk: 'localjdk', maven: 'localmaven')
+				 withMaven(jdk: 'local-jdk', maven: 'local-maven')
 				 {   
                     sh 'mvn compile'} 
                 }
@@ -27,7 +27,7 @@ pipelline {
 			   stage('compile')
 			   {
 			   steps{
-			    withMaven(jdk: 'localjdk', maven: 'localmaven') 
+			    withMaven(jdk: 'local-jdk', maven: 'local-maven') 
                 {   
                     sh 'mvn compile'}
                 }
