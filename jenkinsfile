@@ -27,7 +27,7 @@ pipelline {
 			   stage('compile')
 			   {
 			   steps{
-			    withMaven(jdk: 'localjdk-1.8', maven: 'localmaven') 
+			    withMaven(jdk: 'localjdk', maven: 'localmaven') 
                 {   
                     sh 'mvn compile'}
                 }
