@@ -1,0 +1,14 @@
+pipeline
+{
+agent any 
+stages
+{
+stage('print hii')
+{
+steps {
+
+sh 'echo hii'
+}
+}
+}
+}
